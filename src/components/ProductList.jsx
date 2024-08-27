@@ -36,7 +36,7 @@ export function ProductList() {
               <p>Price: ${product.price}</p>
               <p>Category: {product.category}</p>
               <Link
-                to={`/productos/${product.id}`}
+                to={`/home/productos/${product.id}`}
                 className="product-details-btn"
               >
                 Details

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLinks } from "../components";
+import { NavLinks, Welcome } from "../components";
 import { Route, Routes } from "react-router-dom";
 import { Products } from "./Prodcuts";
 import { Services } from "./Services";
@@ -13,7 +13,7 @@ export function Home() {
       <NavLinks />
       <seciton className="content">
         <Routes>
-          <Route index element={<div>Home Page</div>} />
+          <Route index element={<Welcome />} />
           <Route path="productos" element={<Products />} />
           <Route path="productos/:id" element={<ProductDetailPage />} />
           <Route path="servicios" element={<Services />} />
