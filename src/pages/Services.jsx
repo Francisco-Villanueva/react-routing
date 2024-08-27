@@ -1,5 +1,10 @@
 import React from "react";
+import { ServicesList } from "../components";
 
 export function Services() {
-  return <div>Services Page</div>;
+  return (
+    <div>
+      <ServicesList />
+    </div>
+  );
 }

@@ -4,7 +4,6 @@ import { verifyCredentials } from "../utils/login-form";
 import "../styles/login.css";
 import { useUser } from "../hooks";
 import { useNavigate } from "react-router-dom";
-
 const initialState = {
   email: "",
   password: "",

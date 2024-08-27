@@ -9,7 +9,7 @@ export function NavLinks() {
       <nav>
         <ul>
           <li>
-            <Link to="/">
+            <Link to="/home">
               <FaHome /> Inicio
             </Link>
           </li>
@@ -19,12 +19,12 @@ export function NavLinks() {
             </Link>
           </li>
           <li>
-            <Link to="/servicios">
+            <Link to="servicios">
               <FaCogs /> Servicios
             </Link>
           </li>
           <li>
-            <Link to="/contacto">
+            <Link to="contacto">
               <FaEnvelope /> Contacto
             </Link>
           </li>
