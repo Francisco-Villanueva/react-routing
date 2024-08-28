@@ -28,6 +28,7 @@ export function Login() {
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const { setUser } = useUser();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (state.email === "" || state.password === "") {
@@ -42,11 +43,10 @@ export function Login() {
         await verifyCredentials(state.email, state.password);
 
         message.success(`Bienvenido ${state.email}`);
-        setUser(state.email);
-        navigate("/");
+        // setUser(state.email);
+        navigate("/home");
         //  se va a cambiar de ruta...
       } catch (error) {
-        console.log(error);
         message.error("Credenciales invalidas!");
       } finally {
         setIsLoading(false);
@@ -57,6 +57,8 @@ export function Login() {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
+        <h2>Log In</h2>
+
         <input
           type="text"
           value={state.email}

@@ -14,16 +14,16 @@ const products = [
 
 // Function to get all products
 export async function getAllProducts() {
-	await new Promise(resolve => setTimeout(resolve, 2000));
+	await new Promise(resolve => setTimeout(resolve, 0));
 	return products;
 }
 
 // Function to get a product by id
 export async function getProductById(id) {
-	await new Promise(resolve => setTimeout(resolve, 2000));
+	await new Promise(resolve => setTimeout(resolve, 0));
 	const product = products.find(p => p.id === id);
 	if (!product) {
-		throw new Error('Product not found');
+		throw new Error('Product not found ');
 	}
 	return product;
 }
